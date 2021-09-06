@@ -59,6 +59,7 @@ jobs:
         run : aws elasticbeanstalk update-environment --environment-name ${{ env.EB_ENVIRONMENT_NAME }} --version-label "Ver-${{ github.sha }}"
 
 
+
       - name: print Happy Massage for CI
         run : echo "CD Pieplan part finished success"
 
